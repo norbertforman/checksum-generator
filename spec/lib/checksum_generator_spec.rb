@@ -17,7 +17,7 @@ describe ChecksumGenerator do
       expect(cg[:number_of][:upper_case_vowels]).to eq(5)
     end
     it 'consonants' do
-      expect(cg[:number_of][:upper_case_vowels]).to eq(21)
+      expect(cg[:number_of][:consonants]).to eq(21)
     end
   end
   describe '.generate 2nd string' do
@@ -35,7 +35,7 @@ describe ChecksumGenerator do
       expect(cg[:number_of][:upper_case_vowels]).to eq(3)
     end
     it 'consonants' do
-      expect(cg[:number_of][:upper_case_vowels]).to eq(24)
+      expect(cg[:number_of][:consonants]).to eq(24)
     end
   end
 end
