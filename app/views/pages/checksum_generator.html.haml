@@ -1,1 +1,18 @@
-%p hello
+.container
+  %br
+  %br
+  %br	
+  %h2.text-xs-center Generator
+  .row
+    .col-xs-12.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-lg-6.col-lg-offset-3.col-xl-6.col-xl-offset-3
+      = form_tag(submit_checksum_generator_pages_path, method: :post, remote: true) do
+        %fieldset{class: "form-group"}
+          %label Content
+          = text_area_tag :content, '', class: "form-control", required: true
+        = submit_tag "Generate", class: "btn btn-primary btn-block"
+  %br
+  %br
+  %br
+  .row
+    .col-12
+      %p.value

@@ -24,7 +24,7 @@ class ChecksumGenerator
 
   # strip content of unnecessary characters
   def clean_content(content)
-    content.gsub(/[^a-zA-Z ]/, '').squeeze(' ').downcase
+    content.gsub(/[^a-zA-Z ]/, '').squeeze(' ').downcase.strip
   end
 
   def count_of_original_words
