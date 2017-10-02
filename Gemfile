@@ -31,6 +31,16 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# HTML Abstraction Markup Language
+gem 'haml'
+# Flexible authentication solution for Rails based on Warden
+gem 'devise'
+# framework for creating elegant backends for website administration
+gem 'activeadmin', github: 'activeadmin'
+# Bootstrap 4 ruby gem for Ruby on Rails
+gem 'bootstrap', '4.0.0.alpha6'
+gem 'tether-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
