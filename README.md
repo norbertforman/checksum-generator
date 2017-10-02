@@ -1,24 +1,24 @@
-# README
+# Checksum Generator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Rules
 
-* Ruby version
+* Count of original words
+* Count of newly created words
+* Count of upper case vowels
+* Count of consonants
+* Length of original string
 
-* System dependencies
+## Instalation
 
-* Configuration
+* clone the project
+* install ruby 2.4.0 or a newer version (if you don't have it installed already)
+* run bundle install
+* rake db:create
+* rake db:migrate
+* rake db:seed (email: test@test.com, password: 12345678)
 
-* Database creation
 
-* Database initialization
+## RSpec
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* rspec
